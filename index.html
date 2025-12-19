@@ -1,14 +1,198 @@
-<!doctype html>
-<html>
-  <head>
-    <meta charset="utf-8" />
-    <title>Legal</title>
-  </head>
-  <body>
-    <h1>n8n Video Publisher</h1>
-    <ul>
-      <li><a href="./privacy-policy.html">Privacy Policy</a></li>
-      <li><a href="./terms-of-service.html">Terms of Service</a></li>
-    </ul>
-  </body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>n8n Video Publisher - Automation Tool</title>
+    <meta name="description" content="Automated video publishing tool for internal content management.">
+    <style>
+        :root {
+            --primary: #000000;
+            --accent: #fe2c55; /* TikTok Color */
+            --accent-2: #25f4ee; /* TikTok Color */
+            --text: #333;
+            --light-bg: #f8f9fa;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            color: var(--text);
+        }
+
+        /* Navigation */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 5%;
+            background: white;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+
+        .logo {
+            font-weight: bold;
+            font-size: 1.5rem;
+            color: var(--primary);
+        }
+
+        .nav-links a {
+            margin-left: 20px;
+            text-decoration: none;
+            color: var(--text);
+            font-weight: 500;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            padding: 80px 20px;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            color: #666;
+            max-width: 600px;
+            margin: 0 auto 30px auto;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 30px;
+            background-color: var(--primary);
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background-color: var(--accent);
+        }
+
+        /* Features Section */
+        .features {
+            padding: 60px 5%;
+            background: white;
+            text-align: center;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .feature-card {
+            padding: 30px;
+            border: 1px solid #eee;
+            border-radius: 10px;
+            background: var(--light-bg);
+        }
+
+        .feature-card h3 {
+            color: var(--primary);
+        }
+
+        /* About / Disclaimer Section */
+        .about {
+            padding: 60px 5%;
+            background-color: #f0f2f5;
+            text-align: center;
+        }
+
+        /* Footer */
+        footer {
+            background: #222;
+            color: white;
+            padding: 40px 5%;
+            text-align: center;
+        }
+
+        footer a {
+            color: #aaa;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        footer a:hover {
+            color: white;
+        }
+
+        .legal-notice {
+            font-size: 0.8rem;
+            margin-top: 20px;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="logo">n8n Video Publisher</div>
+        <div class="nav-links">
+            <a href="#features">Features</a>
+            <a href="#about">About</a>
+            <a href="mailto:admin@xosovn.net">Contact</a>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <h1>Automate Your Content Workflow</h1>
+        <p>The official automation integration for publishing video content directly to TikTok via n8n workflows.</p>
+        <a href="#about" class="btn">Learn More</a>
+    </section>
+
+    <section id="features" class="features">
+        <h2>Key Features</h2>
+        <div class="features-grid">
+            <div class="feature-card">
+                <h3>🚀 Seamless Automation</h3>
+                <p>Connects directly with n8n to automate the upload and publishing process without manual intervention.</p>
+            </div>
+            <div class="feature-card">
+                <h3>🔒 Secure Integration</h3>
+                <p>Uses OAuth 2.0 specifically for authorized internal accounts to ensure content security.</p>
+            </div>
+            <div class="feature-card">
+                <h3>📊 Workflow Optimization</h3>
+                <p>Designed to streamline the daily content delivery pipeline for the XosoVN media team.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <h2>About This Tool</h2>
+        <p style="max-width: 800px; margin: 0 auto;">
+            <strong>n8n Video Publisher</strong> is an internal tool developed by the technical team at 
+            <a href="https://xosovn.net" target="_blank">xosovn.net</a>. 
+            <br><br>
+            Its sole purpose is to facilitate the automated posting of lottery result videos to our official TikTok channels. 
+            This application is restricted to internal use and is not available for public sign-up or distribution.
+        </p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 n8n Video Publisher / XosoVN. All rights reserved.</p>
+        <br>
+        <div>
+            <a href="https://minhlucifer11-art.github.io/tiktok-app-legal/privacy-policy.html" target="_blank">Privacy Policy</a> | 
+            <a href="https://minhlucifer11-art.github.io/tiktok-app-legal/terms-of-service.html" target="_blank">Terms of Service</a>
+        </div>
+        <div class="legal-notice">
+            This site is used for app verification and compliance purposes only.
+        </div>
+    </footer>
+
+</body>
 </html>
