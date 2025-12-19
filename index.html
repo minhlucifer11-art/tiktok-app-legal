@@ -30,12 +30,16 @@
             padding: 1rem 5%;
             background: white;
             box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
         }
 
         .logo {
             font-weight: bold;
             font-size: 1.5rem;
             color: var(--primary);
+            text-decoration: none;
         }
 
         .nav-links a {
@@ -43,113 +47,157 @@
             text-decoration: none;
             color: var(--text);
             font-weight: 500;
+            transition: color 0.3s;
+        }
+        
+        .nav-links a:hover {
+            color: var(--accent);
         }
 
         /* Hero Section */
         .hero {
             background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
-            padding: 80px 20px;
+            padding: 100px 20px;
             text-align: center;
         }
 
         .hero h1 {
             font-size: 3rem;
-            margin-bottom: 10px;
+            margin-bottom: 15px;
+            color: var(--primary);
         }
 
         .hero p {
             font-size: 1.2rem;
-            color: #666;
-            max-width: 600px;
-            margin: 0 auto 30px auto;
+            color: #555;
+            max-width: 650px;
+            margin: 0 auto 35px auto;
         }
 
         .btn {
             display: inline-block;
-            padding: 12px 30px;
+            padding: 12px 35px;
             background-color: var(--primary);
             color: white;
             text-decoration: none;
-            border-radius: 5px;
+            border-radius: 30px;
             font-weight: bold;
             transition: 0.3s;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
         }
 
         .btn:hover {
             background-color: var(--accent);
+            transform: translateY(-2px);
         }
 
         /* Features Section */
         .features {
-            padding: 60px 5%;
+            padding: 80px 5%;
             background: white;
             text-align: center;
         }
 
         .features-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 30px;
-            margin-top: 40px;
+            margin-top: 50px;
         }
 
         .feature-card {
-            padding: 30px;
-            border: 1px solid #eee;
-            border-radius: 10px;
-            background: var(--light-bg);
+            padding: 40px 30px;
+            border-radius: 15px;
+            background: white;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+            transition: transform 0.3s;
+            border: 1px solid #f0f0f0;
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-5px);
         }
 
         .feature-card h3 {
             color: var(--primary);
+            margin-top: 0;
         }
 
-        /* About / Disclaimer Section */
+        /* About Section */
         .about {
-            padding: 60px 5%;
-            background-color: #f0f2f5;
+            padding: 80px 5%;
+            background-color: #f8f9fa;
             text-align: center;
+        }
+        
+        /* Contact Section */
+        .contact {
+            padding: 80px 5%;
+            text-align: center;
+            background: white;
+        }
+        
+        .contact-box {
+            max-width: 600px;
+            margin: 30px auto 0;
+            padding: 30px;
+            border: 1px solid #eee;
+            border-radius: 10px;
+            background: #fff;
+        }
+        
+        .contact-email {
+            font-size: 1.3rem;
+            font-weight: bold;
+            color: var(--accent);
+            text-decoration: none;
         }
 
         /* Footer */
         footer {
-            background: #222;
-            color: white;
-            padding: 40px 5%;
+            background: #111;
+            color: #eee;
+            padding: 50px 5%;
             text-align: center;
+            font-size: 0.9rem;
         }
 
         footer a {
             color: #aaa;
             text-decoration: none;
-            margin: 0 10px;
+            margin: 0 15px;
+            transition: color 0.3s;
         }
 
         footer a:hover {
             color: white;
+            text-decoration: underline;
         }
 
         .legal-notice {
             font-size: 0.8rem;
-            margin-top: 20px;
-            color: #777;
+            margin-top: 25px;
+            color: #666;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
         }
     </style>
 </head>
 <body>
 
     <nav>
-        <div class="logo">n8n Video Publisher</div>
+        <a href="#" class="logo">n8n Video Publisher</a>
         <div class="nav-links">
             <a href="#features">Features</a>
             <a href="#about">About</a>
-            <a href="mailto:admin@xosovn.net">Contact</a>
+            <a href="#contact">Contact</a>
         </div>
     </nav>
 
     <section class="hero">
         <h1>Automate Your Content Workflow</h1>
-        <p>The official automation integration for publishing video content directly to TikTok via n8n workflows.</p>
+        <p>The official automation integration for publishing video content directly to TikTok via n8n workflows. Designed for efficiency and scale.</p>
         <a href="#about" class="btn">Learn More</a>
     </section>
 
@@ -173,24 +221,40 @@
 
     <section id="about" class="about">
         <h2>About This Tool</h2>
-        <p style="max-width: 800px; margin: 0 auto;">
-            <strong>n8n Video Publisher</strong> is an internal tool developed by the technical team at 
-            <a href="https://xosovn.net" target="_blank">xosovn.net</a>. 
+        <p style="max-width: 800px; margin: 0 auto; color: #555;">
+            <strong>n8n Video Publisher</strong> is a specialized internal tool developed by the technical team at 
+            <a href="https://xosovn.net" target="_blank" style="color: #fe2c55; text-decoration: none; font-weight: bold;">xosovn.net</a>. 
             <br><br>
             Its sole purpose is to facilitate the automated posting of lottery result videos to our official TikTok channels. 
             This application is restricted to internal use and is not available for public sign-up or distribution.
         </p>
     </section>
 
+    <section id="contact" class="contact">
+        <h2>Get in Touch</h2>
+        <p>Have questions about the tool or need technical assistance?</p>
+        
+        <div class="contact-box">
+            <p style="margin-bottom: 10px; color: #666;">Administrator & Technical Support:</p>
+            <a href="mailto:minh.lucifer11@gmail.com" class="contact-email">
+                📧 minh.lucifer11@gmail.com
+            </a>
+            <p style="margin-top: 20px; font-size: 0.9rem; color: #888;">
+                For general inquiries regarding XosoVN, please visit our main website.
+            </p>
+        </div>
+    </section>
+
     <footer>
         <p>&copy; 2025 n8n Video Publisher / XosoVN. All rights reserved.</p>
         <br>
         <div>
-            <a href="https://minhlucifer11-art.github.io/tiktok-app-legal/privacy-policy.html" target="_blank">Privacy Policy</a> | 
-            <a href="https://minhlucifer11-art.github.io/tiktok-app-legal/terms-of-service.html" target="_blank">Terms of Service</a>
+            <a href="./privacy-policy.html" target="_blank">Privacy Policy</a>
+            <a href="./terms-of-service.html" target="_blank">Terms of Service</a>
         </div>
         <div class="legal-notice">
-            This site is used for app verification and compliance purposes only.
+            This site is used for app verification and compliance purposes only. 
+            The content and tools described herein are proprietary and for internal operational use.
         </div>
     </footer>
 
